@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service TextSummarizer {
+  rpc Summarize (SummarizeRequest) returns (SummarizeResponse);
+}
+
+message SummarizeRequest {
+  string text = 1;
+  int32 max_length = 2;
+}
+
+message SummarizeResponse {
+  string summary = 1;
+}
