@@ -49,8 +49,9 @@ cd grpc-text-summarization-demo
 pip install -r requirements.txt
 
 4.Start the gRPC server:
-python server.py
-
+  ```bash
+  python server.py
+```
 
 The server should now be running and listening on localhost:50051.
 
@@ -61,8 +62,9 @@ Ensure the server is running.
 Open the client.py script and replace the sample text with the text you want to summarize.
 
 Run the client script:
+```bash
 python client.py
-
+```
 The client will connect to the server, send the text for summarization, and print the generated summary.
 
 ## Configuration
